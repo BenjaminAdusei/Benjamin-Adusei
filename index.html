@@ -20,6 +20,9 @@
         .project-links a:hover { background: #1a252f; }
         .case-study-link { background: #3498db !important; }
         .case-study-link:hover { background: #2980b9 !important; }
+        .bio { text-align: center; max-width: 700px; margin: 1rem auto 0; color: #555; }
+        
+        /* Footer centering */
         footer {
             display: flex;
             justify-content: center;
@@ -28,33 +31,31 @@
             padding-top: 1rem;
             border-top: 1px solid #ddd;
             color: #888;
-            text-align: center;
             width: 100%;
-      }
-      footer p {
-      margin: 0;
-      }
-      .bio { text-align: center; max-width: 700px; margin: 1rem auto 0; color: #555; }
-       
+        }
+        footer p {
+            margin: 0;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header>
-    <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; justify-content: center;">
-        <img src="profile.jpg" alt="Benjamin Adusei" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;">
-        <div style="text-align: left;">
-            <h1 style="margin: 0;">👨‍🏫 Benjamin Adusei</h1>
-            <div class="tagline">B.S. Computer Science @ UoPeople | 10 years Educator | EduTech Builder</div>
-            <div class="bio">A teacher in Ghana and Vietnam. Building technology that works in low-resource classrooms — offline-first, AI-enhanced, and focused on real learning outcomes.</div>
+        <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; justify-content: center;">
+            <img src="profile.jpg" alt="Benjamin Adusei" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;">
+            <div style="text-align: left;">
+                <h1 style="margin: 0;">👨‍🏫 Benjamin Adusei</h1>
+                <div class="tagline">B.S. Computer Science @ UoPeople | 10 years Educator | EduTech Builder</div>
+                <div class="bio">A teacher in Ghana and Vietnam. Building technology that works in low-resource classrooms — offline-first, AI-enhanced, and focused on real learning outcomes.</div>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
     <div class="projects">
         <!-- Virtual Physics Lab -->
         <div class="project-card">
             <h3>⚛️ Virtual Physics Lab</h3>
-            <p><strong>Multilingual AI-Powered Virtual Physics Laboratory for Accessible STEM Education</strong><br>Students explore projectile motion, circuits, projectile motion, and more — with an AI tutor that gives hints and detects misconceptions.</p>
+            <p><strong>Multilingual AI-Powered Virtual Physics Laboratory for Accessible STEM Education</strong><br>Students explore projectile motion, circuits, and more — with an AI tutor that gives hints and detects misconceptions.</p>
             <div class="project-links">
                 <a href="https://aduseiphysicslab.netlify.app/" target="_blank">🚀 Live Demo</a>
                 <a href="virtual-lab.html" class="case-study-link">📖 Full Case Study</a>
@@ -64,20 +65,21 @@
         <!-- Basic school report PWA -->
         <div class="project-card">
             <h3>📱 Terminal Report PWA</h3>
-            <p><strong>Offline-first Progressive Web App for Ghanaian schools</strong><br>Teachers can give real time academic feedback on their students' performance at the end of each term withought stress.</p>
+            <p><strong>Offline-first Progressive Web App for Ghanaian schools</strong><br>Teachers can give real time academic feedback on their students' performance at the end of each term without stress.</p>
             <div class="project-links">
                 <a href="https://bscschreportbksolns.netlify.app/" target="_blank">🚀 Live Demo</a>
                 <a href="pwa.html" class="case-study-link">📖 Full Case Study</a>
             </div>
         </div>
 
-        <!-- More coming soon -->
+        <!-- AI Lesson Planner -->
         <div class="project-card">
-             <h3>🤖 AI Lesson Planner</h3>
+            <h3>🤖 AI Lesson Planner</h3>
             <p><strong>WAEC-aligned lesson plans in seconds</strong><br>Teacher inputs topic, class, duration, resources — AI generates full lesson plan with objectives, step‑by‑step activities, assessment, and local examples.</p>
             <div class="project-links">
                 <a href="https://marvelous-youtiao-84e5ed.netlify.app/" target="_blank">🚀 Live Demo</a>
                 <a href="ai-lesson-planner.html" class="case-study-link">📖 Full Case Study</a>
+            </div>
         </div>
     </div>
 
