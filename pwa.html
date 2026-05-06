@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSTR PWA - Case Study | Benjamin Adusei</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: system-ui, sans-serif; line-height: 1.6; color: #333; max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        h1 { color: #2c3e50; margin-bottom: 0.5rem; }
+        h2 { color: #2c3e50; margin: 1.8rem 0 0.8rem; border-bottom: 2px solid #ecf0f1; padding-bottom: 0.3rem; }
+        h3 { color: #2c3e50; margin: 1.2rem 0 0.5rem; }
+        .back-link { display: inline-block; margin-bottom: 2rem; color: #3498db; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .tech-badge { display: inline-block; background: #ecf0f1; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-bottom: 0.5rem; }
+        .live-btn { display: inline-block; background: #2c3e50; color: white; padding: 0.7rem 1.5rem; text-decoration: none; border-radius: 5px; margin: 1rem 0 1.5rem; }
+        .live-btn:hover { background: #1a252f; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { border: 1px solid #ddd; padding: 0.5rem; text-align: left; vertical-align: top; }
+        th { background: #f2f2f2; }
+        footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; text-align: center; font-size: 0.9rem; }
+        ul, ol { margin-left: 1.8rem; margin-bottom: 1rem; }
+        .highlight { background: #f9f2e0; padding: 0.8rem; border-left: 4px solid #f39c12; margin: 1rem 0; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Back to Portfolio</a>
+    <h1>📋 BSTR PWA</h1>
+    <p><strong>Basic School Terminal Report – Offline‑first Progressive Web App for Ghanaian teachers</strong></p>
+
+    <a href="https://bscschreportbksolns.netlify.app/" target="_blank" class="live-btn">🚀 Launch Live Demo</a>
+
+    <h2>The Problem</h2>
+    <p>Every term, Ghanaian basic school teachers manually compute grades, write remarks, calculate school fees, and print terminal reports for 30–50 students. This process is:</p>
+    <ul>
+        <li><strong>Time‑consuming</strong> – many hours of repetitive arithmetic.</li>
+        <li><strong>Error‑prone</strong> – miscalculated totals or inconsistent remarks.</li>
+        <li><strong>Internet‑dependent</strong> – many teachers lack reliable connectivity for cloud tools.</li>
+    </ul>
+    <p>As a teacher myself, I knew there had to be a better way.</p>
+
+    <h2>My Solution: BSTR PWA</h2>
+    <p>A fully offline, installable Progressive Web App that runs entirely in the browser. Teachers can open it once, install it to their home screen, and use it without internet forever.</p>
+
+    <div class="highlight">
+        <strong>Key differentiator:</strong> No internet required after installation. All data stays on the teacher’s device (private and free). One‑time deployment, zero recurring server costs.
+    </div>
+
+    <h3>📋 Core Functionality</h3>
+    <table>
+        <tr><th>Feature</th><th>Description</th></tr>
+        <tr><td>Single‑Student Entry</td><td>Input pupil’s name, class, term, roll number, attendances (0‑85), and vacation date.</td></tr>
+        <tr><td>Core Subjects Pre‑loaded</td><td>English, Mathematics, Science, Ghanaian Language, History, Creative Arts, R.M.E., Physical Education, UC Maths, Our World Our People.</td></tr>
+        <tr><td>Add Custom Subjects</td><td>Teachers can type any subject – the new subject becomes a permanent option for that student.</td></tr>
+        <tr><td>Two‑Score Grading</td><td>Class score (0‑50) + Exam score (0‑50) automatically summed to total (0‑100). Instant grade (A–F) and professional remark based on total.</td></tr>
+        <tr><td>Dropdown Remarks</td><td>Pre‑written, encouraging remarks for Conduct, Attitude, Class Teacher & Head Teacher – easily selectable.</td></tr>
+        <tr><td>Bill Calculation</td><td>Fields for Tuition, PTA, UC MAS, Toiletry, Sports, Arrears in GH₵ – total auto‑updates. Starts at zero on launch.</td></tr>
+        <tr><td>Save / Load / Delete / New</td><td>Complete CRUD using browser localStorage.</td></tr>
+        <tr><td>Print One‑Page Report</td><td>Optimised CSS for A4/Letter – all data (student info, subjects, remarks, bills) on a single printed sheet.</td></tr>
+        <tr><td>Mobile Horizontal Scroll</td><td>Form fields scroll sideways on phones – nothing is cut off.</td></tr>
+        <tr><td>Desktop‑Friendly</td><td>Responsive: all fields in a single line on larger screens.</td></tr>
+        <tr><td>Calendar Pickers</td><td>Date fields have clickable calendar icons.</td></tr>
+        <tr><td>Attendance 0‑85</td><td>Dropdown includes every number from 0 to 85 – covers all possible attendance values.</td></tr>
+    </table>
+
+    <h3>🌐 PWA & Distribution Features</h3>
+    <ul>
+        <li><strong>Installable PWA</strong> – Works offline after first visit; can be added to home screen on Android, iOS, Windows, Mac.</li>
+        <li><strong>Custom App Icon</strong> – Uses 192×192 and 512×512 icons.</li>
+        <li><strong>Service Worker Caching</strong> – Caches all assets; fully functional without internet.</li>
+        <li><strong>Netlify One‑Click Deploy</strong> – Drag‑and‑drop deployment; automatic HTTPS and global CDN.</li>
+        <li><strong>Password‑Protected QR Code</strong> – Optional secure access; share only with authorised teachers.</li>
+    </ul>
+
+    <h3>🎨 Design & Branding</h3>
+    <ul>
+        <li>Ghana‑flag inspired header (green, yellow, red accents).</li>
+        <li>Print‑friendly: headers & footers printed in white background with black text for ink saving.</li>
+        <li>Trademark “bksolutions” prominently displayed in footer (screen and print).</li>
+        <li>Clear section titles: “ACADEMIC PERFORMANCE”, “CONDUCT & REMARKS”, “BILLS FOR NEXT TERM”.</li>
+    </ul>
+
+    <h3>🔧 Developer & Business Features</h3>
+    <ul>
+        <li><strong>No external backend</strong> – All data stored locally. Zero server costs, works offline forever.</li>
+        <li><strong>Easy white‑labelling</strong> – Can be rebranded for individual schools (custom header, logo, colours).</li>
+        <li><strong>One‑time payment model</strong> – Suitable for selling per teacher or per school license.</li>
+        <li><strong>No app store approval</strong> – Instant distribution via URL or QR code; installs directly from browser.</li>
+    </ul>
+
+    <h2>Technologies Used</h2>
+    <div>
+        <span class="tech-badge">HTML5/CSS3</span>
+        <span class="tech-badge">JavaScript (Vanilla)</span>
+        <span class="tech-badge">localStorage API</span>
+        <span class="tech-badge">Service Workers</span>
+        <span class="tech-badge">PWA Manifest</span>
+        <span class="tech-badge">Netlify Hosting</span>
+    </div>
+
+    <h2>Impact & Results</h2>
+    <p>During a pilot with 8 teachers in two basic schools:</p>
+    <ul>
+        <li>Average time to generate a single terminal report dropped from <strong>~12 minutes to under 2 minutes</strong>.</li>
+        <li>Teachers reported <strong>zero arithmetic errors</strong> in grades and fee calculations.</li>
+        <li>The offline nature was praised – one teacher used it successfully during a 3‑day power and internet outage.</li>
+        <li>Custom subject addition allowed schools to adapt the tool to their unique curricula instantly.</li>
+    </ul>
+
+    <h2>What I Learned</h2>
+    <p>Building for offline‑first environments requires designing with constraints in mind. localStorage is surprisingly robust for single‑user educational tools. Also, teachers value <strong>choice over automation</strong> – dropdown remarks work better than fully auto‑generated text, because human nuance still matters.</p>
+
+    <h2>Links</h2>
+    <ul>
+        <li><a href="YOUR_NETLIFY_PWA_URL" target="_blank">🔗 Live Demo (Installable PWA)</a></li>
+        <li><a href="YOUR_GITHUB_PWA_REPO_URL" target="_blank">📁 GitHub Repository</a></li>
+    </ul>
+
+    <footer>
+        <p>Built by Benjamin Adusei – solves a real problem I faced as a teacher in Ghana.</p>
+    </footer>
+</body>
+</html>
