@@ -21,6 +21,10 @@
         footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; text-align: center; font-size: 0.9rem; }
         ul, ol { margin-left: 1.8rem; margin-bottom: 1rem; }
         .highlight { background: #f9f2e0; padding: 0.8rem; border-left: 4px solid #f39c12; margin: 1rem 0; }
+        .screenshot-grid { display: flex; flex-wrap: wrap; gap: 2rem; margin: 1.5rem 0; }
+        .screenshot-card { flex: 1; min-width: 250px; background: #fafafa; border-radius: 12px; padding: 1rem; border: 1px solid #e0e0e0; }
+        .screenshot-card img { width: 100%; border-radius: 8px; border: 1px solid #ddd; margin-bottom: 0.5rem; }
+        .screenshot-card p { margin: 0.5rem 0 0; font-size: 0.95rem; }
     </style>
 </head>
 <body>
@@ -110,10 +114,29 @@
     <h2>What I Learned</h2>
     <p>Building for offline‑first environments requires designing with constraints in mind. localStorage is surprisingly robust for single‑user educational tools. Also, teachers value <strong>choice over automation</strong> – dropdown remarks work better than fully auto‑generated text, because human nuance still matters.</p>
 
+    <!-- ********** NEW SECTION: REAL-WORLD VARIANTS ********** -->
+    <h2>📸 Real‑World Variants – Customised for Actual Schools</h2>
+    <p>Based on the same core engine, I built two additional versions for specific partners:</p>
+
+    <div class="screenshot-grid">
+        <div class="screenshot-card">
+            <img src="presbyterian-school.png" alt="Presbyterian Junior High School custom terminal report PWA">
+            <p><strong>🏫 Presbyterian Junior High School – Tuobodom</strong><br>
+            White‑labelled version with the school's name, custom header colours, and a dedicated signature block for the headmistress. Used by 6 teachers for the entire first term of 2025.</p>
+        </div>
+        <div class="screenshot-card">
+            <img src="future-edu-hub.png" alt="Future Edu Hub bilingual PWA for 6 classes">
+            <p><strong>🌍 Future Edu Hub</strong><br>
+            Bilingual (English‑Vietnamese) daily behaviour tracker for 6 classes (ages 3–13). Features: date picker, custom remarks with auto‑translation, and per‑class student rosters. Deployed for a school in Vietnam.</p>
+        </div>
+    </div>
+    <!-- ****************************************************** -->
+
     <h2>Links</h2>
     <ul>
-        <li><a href="YOUR_NETLIFY_PWA_URL" target="_blank">🔗 Live Demo (Installable PWA)</a></li>
-        <li><a href="YOUR_GITHUB_PWA_REPO_URL" target="_blank">📁 GitHub Repository</a></li>
+        <li><a href="https://bscschreportbksolns.netlify.app/" target="_blank">🔗 Live Demo (Installable PWA)</a></li>
+        <!-- If you have a public GitHub repo for this project, replace the # with the URL. Otherwise, you can delete this line. -->
+        <li><a href="#" target="_blank">📁 GitHub Repository (private – contact for access)</a></li>
     </ul>
 
     <footer>
